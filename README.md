@@ -1,9 +1,3 @@
-Com o link do repositório em mãos, atualizei o código abaixo.
-
-Já inseri a URL correta para o comando de clonagem e, aproveitando que tenho seus dados, já preenchi o rodapé com seu nome (**Lucas Mol Rodrigues**) para deixar pronto para o seu portfólio.
-
-Aqui está o código final do `README.md`:
-
 ````markdown
 # 🎧 Spotify Landing Page Clone
 
