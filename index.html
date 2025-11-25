@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Música para todos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-spotify"></i>
+                    <span>Spotify</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#premium">Premium</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <button class="btn-login">Entrar</button>
+                    <button class="btn-signup">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Ouça Música Sem Limites</h1>
+            <p>Descubra suas músicas, artistas e playlists favoritas. Tudo em um só lugar.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Começar Agora</button>
+                <button class="btn-secondary">Saber Mais</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <div class="card-header">
+                    <i class="fas fa-music"></i>
+                    <span>Agora Tocando</span>
+                </div>
+                <div class="card-content">
+                    <p class="song-title">Imagine</p>
+                    <p class="artist-name">John Lennon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="premium">
+        <div class="container">
+            <h2>Escolha o Seu Plano</h2>
+            <p class="section-subtitle">Aproveite 1 mês grátis no plano Premium</p>
+            
+            <div class="plans-grid">
+                <!-- Plano Gratuito -->
+                <div class="plan-card">
+                    <h3>Gratuito</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">0</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Acesso limitado</li>
+                        <li><i class="fas fa-check"></i> Anúncios ocasionais</li>
+                        <li><i class="fas fa-check"></i> Qualidade padrão</li>
+                        <li><i class="fas fa-times"></i> Sem modo offline</li>
+                        <li><i class="fas fa-times"></i> Sem avanço de faixas ilimitado</li>
+                    </ul>
+                    <button class="btn-plan">Começar Grátis</button>
+                </div>
+
+                <!-- Plano Premium Individual -->
+                <div class="plan-card featured">
+                    <div class="badge">Mais Popular</div>
+                    <h3>Premium Individual</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">14,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Sem anúncios</li>
+                        <li><i class="fas fa-check"></i> Qualidade premium</li>
+                        <li><i class="fas fa-check"></i> Modo offline</li>
+                        <li><i class="fas fa-check"></i> Avanço de faixas ilimitado</li>
+                        <li><i class="fas fa-check"></i> Compartilhar faixas</li>
+                    </ul>
+                    <button class="btn-plan primary">Começar 1 Mês Grátis</button>
+                </div>
+
+                <!-- Plano Premium Duo -->
+                <div class="plan-card">
+                    <h3>Premium Duo</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">21,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Para 2 usuários</li>
+                        <li><i class="fas fa-check"></i> Sem anúncios</li>
+                        <li><i class="fas fa-check"></i> Qualidade premium</li>
+                        <li><i class="fas fa-check"></i> Modo offline</li>
+                        <li><i class="fas fa-check"></i> Contas separadas</li>
+                    </ul>
+                    <button class="btn-plan">Começar 1 Mês Grátis</button>
+                </div>
+
+                <!-- Plano Premium Família -->
+                <div class="plan-card">
+                    <h3>Premium Família</h3>
+                    <div class="price">
+                        <span class="currency">R$</span>
+                        <span class="amount">34,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Para até 6 usuários</li>
+                        <li><i class="fas fa-check"></i> Sem anúncios</li>
+                        <li><i class="fas fa-check"></i> Qualidade premium</li>
+                        <li><i class="fas fa-check"></i> Modo offline</li>
+                        <li><i class="fas fa-check"></i> Bloqueio de conteúdo explícito</li>
+                    </ul>
+                    <button class="btn-plan">Começar 1 Mês Grátis</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos Section -->
+    <section id="recursos" class="recursos">
+        <div class="container">
+            <h2>Por que Escolher o Spotify?</h2>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Mais de 100 Milhões de Faixas</h3>
+                    <p>Acesse a maior biblioteca de músicas do mundo com artistas de todos os gêneros.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-sparkles"></i>
+                    </div>
+                    <h3>Descoberta Personalizada</h3>
+                    <p>Recomendações inteligentes baseadas no seu gosto musical e hábitos de escuta.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Conecte-se com Amigos</h3>
+                    <p>Compartilhe suas playlists, veja o que seus amigos estão ouvindo em tempo real.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-podcast"></i>
+                    </div>
+                    <h3>Podcasts Exclusivos</h3>
+                    <p>Ouça seus podcasts favoritos e descubra novos conteúdos de áudio.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Qualidade de Áudio</h3>
+                    <p>Aproveite qualidade superior com tecnologia de streaming avançada.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Ouça em Qualquer Lugar</h3>
+                    <p>Sincronize sua música em todos os seus dispositivos de forma automática.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="testimonios">
+        <div class="container">
+            <h2>O que Nossos Usuários Dizem</h2>
+            
+            <div class="testimonios-grid">
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"O Spotify é essencial no meu dia. A qualidade e a variedade de músicas são incomparáveis!"</p>
+                    <p class="testimonio-author">- Maria Silva</p>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"As playlists recomendadas são perfeitas para meu gosto musical. Descobri muitos artistas novos!"</p>
+                    <p class="testimonio-author">- João Santos</p>
+                </div>
+
+                <div class="testimonio-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Sincronizar entre dispositivos é muito fácil. Adoro ouvir do meu celular, tablet e computador!"</p>
+                    <p class="testimonio-author">- Ana Costa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Pronto para Começar?</h2>
+            <p>Aproveite 1 mês grátis no plano Premium. Sem compromisso, cancele quando quiser.</p>
+            <button class="btn-primary large">Comece Sua Prova Gratuita</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#jobs">Empregos</a></li>
+                        <li><a href="#press">Imprensa</a></li>
+                        <li><a href="#newsroom">Newsroom</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Comunidades</h4>
+                    <ul>
+                        <li><a href="#artists">Para Artistas</a></li>
+                        <li><a href="#developers">Desenvolvedores</a></li>
+                        <li><a href="#brands">Marcas</a></li>
+                        <li><a href="#investors">Investidores</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#support">Suporte</a></li>
+                        <li><a href="#free">Spotify Grátis</a></li>
+                        <li><a href="#app">Aplicativo</a></li>
+                        <li><a href="#webplayer">Web Player</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spotify AB. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#legal">Informações Legais</a>
+                    <a href="#privacy">Privacidade</a>
+                    <a href="#cookies">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
